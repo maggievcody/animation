@@ -1,0 +1,116 @@
+/* this is where all of your CSS styles go */
+
+
+.font {
+  font-family: 'Karla', sans-serif;
+  float: left;
+  font-size: 9em;
+  letter-spacing: 20px;
+  color: white;
+}
+
+.stream {
+  left: 25%;
+  margin-top: 5%;
+  position: relative;
+}
+
+@keyframes m_move {
+  0% {left: 0px}
+  100% {left: -550px;}
+}
+
+.m {
+  position: relative;
+  animation: m_move 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes a_move {
+  0% {left: 0px}
+  100% {left: -290px;}
+}
+
+.a {
+  position: relative;
+  animation: a_move 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes s_move {
+  0% {left: 0px}
+  100% {left: 245px;}
+}
+
+.s {
+  position: relative;
+  animation: s_move 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes t_move {
+  0% {left: 0px}
+  100% {left: 250px;}
+}
+
+.t {
+  position: relative;
+  animation: t_move 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes e_move {
+  0% {left: 0px}
+  100% {left: 144px;}
+}
+
+.e {
+  position: relative;
+  animation: e_move 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes r_move {
+  0% {left: 0px}
+  100% {left: 356px;}
+}
+
+.r {
+  position: relative;
+  animation: r_move 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+.image {
+  background: url(../img/stream.jpg) no-repeat;
+  background-size: 100%;
+}
+
+@keyframes woah {
+	0% 	{ transform: rotate(0deg); width: 0px; height: 0px; border-radius: 0%; opacity: 1; }
+	20%	{ transform: rotate(0deg); width: 750px; height: 0px; border-radius: 0%; opacity: 1; }
+	40%	{ transform: rotate(0deg); width: 750px; height: 310px; border-radius: 0%; opacity: 1; }
+	60%	{ transform: rotate(0deg); width: 750px; height: 310px; border-radius: 0%; opacity: 1; }
+	80% 	{ transform: rotate(0deg); width: 100px; height: 0px; border-radius: 0%; opacity: 1;  }
+	100% 	{ transform: rotate(0deg); width: 800px; height: 00px; border-radius: 0%; opacity: 0; }
+}
+
+.square {
+  width: 0px;
+  height: 0px;
+  border: solid white 5px;
+  position: absolute;
+  left: -102.5%;
+  right: -100%;
+  top: -100.5%;
+  bottom: -100%;
+  margin: auto;
+  z-index: -1;
+  animation: woah 7s cubic-bezier(1,0,0,1);
+}
